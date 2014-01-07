@@ -1,0 +1,10 @@
+<div style="width: 100%; display: table; margin-bottom: 10px;">
+    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+        <div class="btn-group btn-group-sm btn-group-justified">
+            <a class="btn btn-default" ng-click="first()" title="Primeiro registro"><span class="glyphicon glyphicon-fast-backward"></span></a>
+            <a class="btn btn-default" ng-click="previous()" title="Registro anterior"><span class="glyphicon glyphicon-step-backward"></span></a>
+            <a class="btn btn-default" ng-click="next()" title="Próximo registro"><span class="glyphicon glyphicon-step-forward"></span></a>
+            <a class="btn btn-default" ng-click="last()" title="Ultimo registro"><span class="glyphicon glyphicon-fast-forward"></span></a>
+        </div>
+    </div>
+</div>

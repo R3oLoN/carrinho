@@ -1,0 +1,39 @@
+.navbar-wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+.navbar-wrapper .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar-wrapper .navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.content{
+    margin-top: 75px;
+}
+
+@media screen AND (min-width: 768px){
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-left:  15px;
+        padding-right: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-left:  0;
+        padding-right: 0;
+    }
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+    .content{
+        margin-top: 100px;
+    }
+}
+

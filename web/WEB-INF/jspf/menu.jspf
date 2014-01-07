@@ -1,0 +1,28 @@
+<%@page import="com.carrinho.model.entities.Usuarios"%>
+<link href="./css/menu.css" rel="stylesheet">
+<div class="navbar-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="main">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="cad_lista">Cadastro de Listas</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="navbar-text" style="padding-left: 15px;"><%= session.getAttribute("sessionUser") != null ? ((Usuarios) session.getAttribute("sessionUser")).getNome() : ""%> </li>
+                    <li><a href="login/logoff">Sair</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
